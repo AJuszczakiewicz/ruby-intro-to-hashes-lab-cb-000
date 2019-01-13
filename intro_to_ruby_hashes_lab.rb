@@ -36,15 +36,13 @@ def monopoly_with_third_tier
 	}
 	monopoly[:railroads][:names] = {reading_railroad: {}}
 	monopoly[:railroads][:names][:pennsylvania_railroad] = {}
+	monopoly[:railroads][:names][:b_and_o_railroad] = {}
 	monopoly
 end
 
 def monopoly_with_fourth_tier
 	#copy and past the monopoly hash you build in the previous method. We're going to add stuff to it here!
 	monopoly = monopoly_with_third_tier
-	monopoly[:railroads][:names][:b_and_o_railroad] = {}
-	binding.pry
+
 	monopoly
 end
-
-monopoly_with_fourth_tier
